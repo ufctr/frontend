@@ -6,7 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>My First Heading</h1>
-    <p>My first paragraph.</p>
+    <div class="login">
+        <div class="login__container">
+            <h1>Sign in to Slack</h1>
+            <form action="/login" method="POST">
+                <input type="email" name="email" placeholder="Email address">
+                <input type="password" name="password" placeholder="Password">
+                <button type="submit">Sign in</button>
+            </form>
+            <p>Don't have an account? <a href="/register">Register Now</a></p>
+        </div>
 </body>
 </html>
